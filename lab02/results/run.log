@@ -1,0 +1,343 @@
+C:\Users\maria\Desktop\university\ML_73952\lab01\.venv\Lib\site-packages\torch\cuda\__init__.py:56: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Training inputs: (1257, 64)
+Training labels: (1257, 10)
+Test inputs: (540, 64)
+Test labels: (540, 10)
+W1 (64, 16)
+b1 (16,)
+W2 (16, 16)
+b2 (16,)
+W3 (16, 10)
+b3 (10,)
+Output shape: (32, 10)
+First prediction: [0.10000007 0.09999837 0.0999954  0.1000008  0.09999682 0.10000109
+ 0.10000277 0.10000046 0.10000342 0.10000081]
+Probability sum: 1.0000000000000002
+Initial loss: 2.302586
+Expected approximately: 2.302585
+W1(1, 6): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W3(2, 4): analytical=3.42597440e-03, numerical=3.42597442e-03, relative error=2.727e-09, PASS
+W1(19, 12): analytical=8.47784495e-04, numerical=8.47784509e-04, relative error=8.572e-09, PASS
+W1(30, 0): analytical=-2.51586044e-03, numerical=-2.51586045e-03, relative error=2.069e-09, PASS
+W1(61, 1): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W1(53, 1): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W1(22, 14): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W1(15, 13): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W1(16, 9): analytical=0.00000000e+00, numerical=0.00000000e+00, relative error=0.000e+00, PASS
+W1(4, 13): analytical=1.71756097e-03, numerical=1.71756096e-03, relative error=2.575e-09, PASS
+
+Passed: 10/10
+Width=16 | LR=0.001 | Epoch=01/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.001 | Epoch=02/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.001 | Epoch=03/50 | Loss=2.3026 | Train accuracy=15.59%
+Width=16 | LR=0.001 | Epoch=04/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.001 | Epoch=05/50 | Loss=2.3026 | Train accuracy=19.01%
+Width=16 | LR=0.001 | Epoch=06/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=07/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=08/50 | Loss=2.3026 | Train accuracy=14.88%
+Width=16 | LR=0.001 | Epoch=09/50 | Loss=2.3026 | Train accuracy=17.18%
+Width=16 | LR=0.001 | Epoch=10/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=11/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=12/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=13/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=14/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=15/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=16/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=17/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=18/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=19/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=20/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=21/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=22/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=23/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=24/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=25/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=26/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=27/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=28/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=29/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=30/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=31/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=32/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=33/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=34/50 | Loss=2.3026 | Train accuracy=18.14%
+Width=16 | LR=0.001 | Epoch=35/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.001 | Epoch=36/50 | Loss=2.3026 | Train accuracy=17.10%
+Width=16 | LR=0.001 | Epoch=37/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=38/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=39/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=40/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=41/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=42/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=43/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=44/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=45/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=46/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=47/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=48/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=49/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.001 | Epoch=50/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=01/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.010 | Epoch=02/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=03/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=04/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.010 | Epoch=05/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.010 | Epoch=06/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=07/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=08/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.010 | Epoch=09/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=10/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=11/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=12/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=13/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=14/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=15/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=16/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=17/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=18/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=19/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=20/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=21/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=22/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=23/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=24/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=25/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=26/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=27/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=28/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=29/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.010 | Epoch=30/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=31/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=32/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=33/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=34/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=35/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=36/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=37/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=38/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=39/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=40/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=41/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=42/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=43/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=44/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=45/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=46/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=47/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=48/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=49/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.010 | Epoch=50/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=01/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=02/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=03/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=04/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=05/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=06/50 | Loss=2.3025 | Train accuracy=9.94%
+Width=16 | LR=0.100 | Epoch=07/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=08/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=09/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=10/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=11/50 | Loss=2.3025 | Train accuracy=10.34%
+Width=16 | LR=0.100 | Epoch=12/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=13/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=14/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=15/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=16/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=17/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=18/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=19/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=20/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=16 | LR=0.100 | Epoch=21/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=22/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=23/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=24/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=25/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=26/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=27/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=28/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=29/50 | Loss=2.3023 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=30/50 | Loss=2.3023 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=31/50 | Loss=2.3022 | Train accuracy=17.58%
+Width=16 | LR=0.100 | Epoch=32/50 | Loss=2.3022 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=33/50 | Loss=2.3021 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=34/50 | Loss=2.3019 | Train accuracy=10.74%
+Width=16 | LR=0.100 | Epoch=35/50 | Loss=2.3018 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=36/50 | Loss=2.3015 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=37/50 | Loss=2.3011 | Train accuracy=10.10%
+Width=16 | LR=0.100 | Epoch=38/50 | Loss=2.3004 | Train accuracy=18.93%
+Width=16 | LR=0.100 | Epoch=39/50 | Loss=2.2992 | Train accuracy=14.64%
+Width=16 | LR=0.100 | Epoch=40/50 | Loss=2.2969 | Train accuracy=10.18%
+Width=16 | LR=0.100 | Epoch=41/50 | Loss=2.2922 | Train accuracy=15.51%
+Width=16 | LR=0.100 | Epoch=42/50 | Loss=2.2809 | Train accuracy=22.59%
+Width=16 | LR=0.100 | Epoch=43/50 | Loss=2.2475 | Train accuracy=21.96%
+Width=16 | LR=0.100 | Epoch=44/50 | Loss=2.1280 | Train accuracy=19.73%
+Width=16 | LR=0.100 | Epoch=45/50 | Loss=1.8886 | Train accuracy=23.07%
+Width=16 | LR=0.100 | Epoch=46/50 | Loss=1.7646 | Train accuracy=23.15%
+Width=16 | LR=0.100 | Epoch=47/50 | Loss=1.7638 | Train accuracy=25.38%
+Width=16 | LR=0.100 | Epoch=48/50 | Loss=1.6374 | Train accuracy=30.07%
+Width=16 | LR=0.100 | Epoch=49/50 | Loss=1.8208 | Train accuracy=26.73%
+Width=16 | LR=0.100 | Epoch=50/50 | Loss=1.5970 | Train accuracy=32.22%
+Width=64 | LR=0.001 | Epoch=01/50 | Loss=2.3026 | Train accuracy=9.31%
+Width=64 | LR=0.001 | Epoch=02/50 | Loss=2.3026 | Train accuracy=7.88%
+Width=64 | LR=0.001 | Epoch=03/50 | Loss=2.3026 | Train accuracy=6.84%
+Width=64 | LR=0.001 | Epoch=04/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=64 | LR=0.001 | Epoch=05/50 | Loss=2.3026 | Train accuracy=8.43%
+Width=64 | LR=0.001 | Epoch=06/50 | Loss=2.3026 | Train accuracy=9.23%
+Width=64 | LR=0.001 | Epoch=07/50 | Loss=2.3026 | Train accuracy=7.24%
+Width=64 | LR=0.001 | Epoch=08/50 | Loss=2.3026 | Train accuracy=8.83%
+Width=64 | LR=0.001 | Epoch=09/50 | Loss=2.3026 | Train accuracy=8.67%
+Width=64 | LR=0.001 | Epoch=10/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=11/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=12/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=13/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=14/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=15/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=16/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=17/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=18/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=19/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=20/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=21/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=22/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=23/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=24/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=25/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=26/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=27/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=28/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=29/50 | Loss=2.3026 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=30/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=31/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=32/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.001 | Epoch=33/50 | Loss=2.3025 | Train accuracy=12.33%
+Width=64 | LR=0.001 | Epoch=34/50 | Loss=2.3025 | Train accuracy=10.50%
+Width=64 | LR=0.001 | Epoch=35/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.001 | Epoch=36/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=37/50 | Loss=2.3025 | Train accuracy=11.93%
+Width=64 | LR=0.001 | Epoch=38/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=39/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=40/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=41/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=42/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=43/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=44/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=45/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=46/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=47/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=48/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=49/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.001 | Epoch=50/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=01/50 | Loss=2.3026 | Train accuracy=10.02%
+Width=64 | LR=0.010 | Epoch=02/50 | Loss=2.3026 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=03/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=04/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.010 | Epoch=05/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.010 | Epoch=06/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=07/50 | Loss=2.3025 | Train accuracy=10.26%
+Width=64 | LR=0.010 | Epoch=08/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.010 | Epoch=09/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=10/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=11/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=12/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=13/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=14/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=15/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=16/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=17/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=18/50 | Loss=2.3025 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=19/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=20/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=21/50 | Loss=2.3024 | Train accuracy=12.09%
+Width=64 | LR=0.010 | Epoch=22/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=23/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=24/50 | Loss=2.3024 | Train accuracy=12.17%
+Width=64 | LR=0.010 | Epoch=25/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=26/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=27/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=28/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=29/50 | Loss=2.3024 | Train accuracy=10.10%
+Width=64 | LR=0.010 | Epoch=30/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=31/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=32/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=33/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=34/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=35/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=36/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=37/50 | Loss=2.3024 | Train accuracy=16.23%
+Width=64 | LR=0.010 | Epoch=38/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=39/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=40/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=41/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=42/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=43/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=44/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=45/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=46/50 | Loss=2.3024 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=47/50 | Loss=2.3023 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=48/50 | Loss=2.3023 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=49/50 | Loss=2.3023 | Train accuracy=10.18%
+Width=64 | LR=0.010 | Epoch=50/50 | Loss=2.3023 | Train accuracy=10.18%
+Width=64 | LR=0.100 | Epoch=01/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.100 | Epoch=02/50 | Loss=2.3025 | Train accuracy=10.18%
+Width=64 | LR=0.100 | Epoch=03/50 | Loss=2.3024 | Train accuracy=10.02%
+Width=64 | LR=0.100 | Epoch=04/50 | Loss=2.3025 | Train accuracy=10.02%
+Width=64 | LR=0.100 | Epoch=05/50 | Loss=2.3024 | Train accuracy=10.90%
+Width=64 | LR=0.100 | Epoch=06/50 | Loss=2.3024 | Train accuracy=9.94%
+Width=64 | LR=0.100 | Epoch=07/50 | Loss=2.3023 | Train accuracy=10.02%
+Width=64 | LR=0.100 | Epoch=08/50 | Loss=2.3023 | Train accuracy=10.02%
+Width=64 | LR=0.100 | Epoch=09/50 | Loss=2.3022 | Train accuracy=10.18%
+Width=64 | LR=0.100 | Epoch=10/50 | Loss=2.3022 | Train accuracy=10.10%
+Width=64 | LR=0.100 | Epoch=11/50 | Loss=2.3020 | Train accuracy=19.97%
+Width=64 | LR=0.100 | Epoch=12/50 | Loss=2.3020 | Train accuracy=10.82%
+Width=64 | LR=0.100 | Epoch=13/50 | Loss=2.3018 | Train accuracy=19.89%
+Width=64 | LR=0.100 | Epoch=14/50 | Loss=2.3016 | Train accuracy=19.81%
+Width=64 | LR=0.100 | Epoch=15/50 | Loss=2.3012 | Train accuracy=10.10%
+Width=64 | LR=0.100 | Epoch=16/50 | Loss=2.3007 | Train accuracy=20.05%
+Width=64 | LR=0.100 | Epoch=17/50 | Loss=2.2999 | Train accuracy=10.10%
+Width=64 | LR=0.100 | Epoch=18/50 | Loss=2.2985 | Train accuracy=20.13%
+Width=64 | LR=0.100 | Epoch=19/50 | Loss=2.2958 | Train accuracy=22.04%
+Width=64 | LR=0.100 | Epoch=20/50 | Loss=2.2898 | Train accuracy=19.41%
+Width=64 | LR=0.100 | Epoch=21/50 | Loss=2.2742 | Train accuracy=22.43%
+Width=64 | LR=0.100 | Epoch=22/50 | Loss=2.2235 | Train accuracy=20.13%
+Width=64 | LR=0.100 | Epoch=23/50 | Loss=2.0488 | Train accuracy=20.21%
+Width=64 | LR=0.100 | Epoch=24/50 | Loss=1.8024 | Train accuracy=25.70%
+Width=64 | LR=0.100 | Epoch=25/50 | Loss=1.6369 | Train accuracy=42.00%
+Width=64 | LR=0.100 | Epoch=26/50 | Loss=1.6604 | Train accuracy=31.66%
+Width=64 | LR=0.100 | Epoch=27/50 | Loss=1.2320 | Train accuracy=53.94%
+Width=64 | LR=0.100 | Epoch=28/50 | Loss=1.0652 | Train accuracy=58.55%
+Width=64 | LR=0.100 | Epoch=29/50 | Loss=1.0844 | Train accuracy=59.27%
+Width=64 | LR=0.100 | Epoch=30/50 | Loss=0.9913 | Train accuracy=58.87%
+Width=64 | LR=0.100 | Epoch=31/50 | Loss=1.3844 | Train accuracy=50.52%
+Width=64 | LR=0.100 | Epoch=32/50 | Loss=1.0151 | Train accuracy=60.54%
+Width=64 | LR=0.100 | Epoch=33/50 | Loss=0.7092 | Train accuracy=71.52%
+Width=64 | LR=0.100 | Epoch=34/50 | Loss=0.5788 | Train accuracy=80.19%
+Width=64 | LR=0.100 | Epoch=35/50 | Loss=0.4647 | Train accuracy=84.65%
+Width=64 | LR=0.100 | Epoch=36/50 | Loss=0.8845 | Train accuracy=71.28%
+Width=64 | LR=0.100 | Epoch=37/50 | Loss=0.6327 | Train accuracy=80.03%
+Width=64 | LR=0.100 | Epoch=38/50 | Loss=0.4238 | Train accuracy=86.56%
+Width=64 | LR=0.100 | Epoch=39/50 | Loss=0.3195 | Train accuracy=89.74%
+Width=64 | LR=0.100 | Epoch=40/50 | Loss=0.5492 | Train accuracy=80.75%
+Width=64 | LR=0.100 | Epoch=41/50 | Loss=0.2228 | Train accuracy=93.00%
+Width=64 | LR=0.100 | Epoch=42/50 | Loss=0.4667 | Train accuracy=82.66%
+Width=64 | LR=0.100 | Epoch=43/50 | Loss=0.2245 | Train accuracy=93.32%
+Width=64 | LR=0.100 | Epoch=44/50 | Loss=0.2398 | Train accuracy=92.28%
+Width=64 | LR=0.100 | Epoch=45/50 | Loss=0.1794 | Train accuracy=95.07%
+Width=64 | LR=0.100 | Epoch=46/50 | Loss=0.3603 | Train accuracy=86.87%
+Width=64 | LR=0.100 | Epoch=47/50 | Loss=0.1623 | Train accuracy=95.07%
+Width=64 | LR=0.100 | Epoch=48/50 | Loss=0.1694 | Train accuracy=94.67%
+Width=64 | LR=0.100 | Epoch=49/50 | Loss=0.2489 | Train accuracy=91.49%
+Width=64 | LR=0.100 | Epoch=50/50 | Loss=0.1684 | Train accuracy=94.67%
+
+FINAL RESULTS
+ Width   Learning rate   Test accuracy
+    16           0.001         10.19%
+    16           0.010         10.19%
+    16           0.100         32.59%
+    64           0.001         10.19%
+    64           0.010         10.19%
+    64           0.100         93.89%
+
+TIMING: MEDIAN OF 100 RUNS
+Width=16: forward=0.1113 ms, backward=0.1254 ms
+Width=64: forward=0.2287 ms, backward=0.1994 ms
