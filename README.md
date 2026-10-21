@@ -1,6 +1,6 @@
 # Machine Learning Systems - 73952
 
-Laboratory work for the Machine Learning Systems course. Both labs can be opened and run as Jupyter notebooks. The datasets are included with scikit-learn; no separate download is needed.
+Laboratory work for the Machine Learning Systems course. The labs can be opened and run as Jupyter notebooks. The datasets are included with scikit-learn; no separate download is needed.
 
 ## Notebooks
 
@@ -8,7 +8,9 @@ Laboratory work for the Machine Learning Systems course. Both labs can be opened
 - [Lab 02: a neural network from scratch](lab02/neural_network.ipynb): the original completed notebook, including all ten code cells and their saved outputs. It contains the dataset preparation, initialization, forward pass, loss, backpropagation, gradient check, training, plots and timing measurements.
 - [Lab 02: package versions](lab02/print_versions.ipynb): a separate environment check; this is not the neural-network assignment.
 
-Reports: [Lab 01](lab01/report.md), [Lab 02](lab02/report.md).
+- [Lab 03: architectures and their costs](lab03/architectures.ipynb): PyTorch MLP, CNN and patch attention on Fashion-MNIST, parameter/FLOP comparison, five-epoch training and latency benchmarks.
+
+Reports: [Lab 01](lab01/report.md), [Lab 02](lab02/report.md), [Lab 03](lab03/report.md).
 
 ## Environment
 
@@ -55,4 +57,4 @@ Lab 01 measurements and model files are in `lab01/results/`. Lab 02's original s
 
 The Lab 02 report uses the original notebook outputs, including its timing measurements. `lab02/results/versions.txt` records the environment used for a later verification run, not a verified record of the original saved notebook session. Handwritten work is stored in `lab02/results/photo1.jpg`, `photo2.jpg` and `photo3.jpg`.
 
-Dataset downloads belong in the ignored root `data/` directory.
+Lab 03 downloads Fashion-MNIST automatically into the ignored root `data/` directory. Its notebook supports execution from the repository root or `lab03/` and saves experiment tables, plots and library versions in `lab03/results/`. Run all cells with the same course kernel. CPU execution is supported; the measured device and thread count are recorded in `lab03/results/versions.txt`.
