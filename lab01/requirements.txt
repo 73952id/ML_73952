@@ -1,2 +1,0 @@
-# Shared course dependencies are maintained at the repository root.
--r ../requirements.txt

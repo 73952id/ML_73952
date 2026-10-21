@@ -4,7 +4,7 @@ Laboratory work for the Machine Learning Systems course. Both labs can be opened
 
 ## Notebooks
 
-- [Lab 01: environment and first system measurements](lab01/experiment.ipynb): package versions, Logistic Regression and Random Forest experiments. The original Python sources are also retained in `lab01/src/`.
+- [Lab 01: environment and first system measurements](lab01/experiment.ipynb): package versions, Logistic Regression and Random Forest experiments.
 - [Lab 02: a neural network from scratch](lab02/neural_network.ipynb): the original completed notebook, including all ten code cells and their saved outputs. It contains the dataset preparation, initialization, forward pass, loss, backpropagation, gradient check, training, plots and timing measurements.
 - [Lab 02: package versions](lab02/print_versions.ipynb): a separate environment check; this is not the neural-network assignment.
 
@@ -53,6 +53,6 @@ From that directory, Lab 01 is available at `../lab01/experiment.ipynb`.
 
 Lab 01 measurements and model files are in `lab01/results/`. Lab 02's original saved outputs are inside `neural_network.ipynb`; its plotting cell writes `lab02/results/loss_curves.png` when run from `lab02/`.
 
-The additional CSV files and `run.log` in `lab02/results/` came from a separate Python run made during restructuring. The restored original notebook does not regenerate them. The Lab 02 report uses its original notebook outputs, including its original timing measurements. `results/versions.txt` records the environment used for the separate run, not a verified record of the original saved notebook session.
+The Lab 02 report uses the original notebook outputs, including its timing measurements. `lab02/results/versions.txt` records the environment used for a later verification run, not a verified record of the original saved notebook session. Handwritten work is stored in `lab02/results/photo1.jpg`, `photo2.jpg` and `photo3.jpg`.
 
 Dataset downloads belong in the ignored root `data/` directory.
