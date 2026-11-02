@@ -1,0 +1,40 @@
+{
+  "raw_shape": [
+    48842,
+    15
+  ],
+  "type_or_range_violations": 0,
+  "missing_counts": {
+    "age": 0,
+    "workclass": 2799,
+    "fnlwgt": 0,
+    "education": 0,
+    "education-num": 0,
+    "marital-status": 0,
+    "occupation": 2809,
+    "relationship": 0,
+    "race": 0,
+    "sex": 0,
+    "capital-gain": 0,
+    "capital-loss": 0,
+    "hours-per-week": 0,
+    "native-country": 857,
+    "income": 0
+  },
+  "exact_duplicate_excess_raw": 52,
+  "train_before_dedup": 34189,
+  "train_after_dedup": 34165,
+  "removed_train_duplicates": 24,
+  "test_rows": 14653,
+  "conflicting_feature_groups": 5,
+  "rows_in_conflicting_groups": 10,
+  "manual_review": {
+    "rows": 50,
+    "status_counts": {
+      "pass": 50
+    },
+    "rows_with_missing_values": 3
+  },
+  "raw_unchanged": true,
+  "test_rows_unchanged": true
+}

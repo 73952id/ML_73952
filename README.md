@@ -12,6 +12,14 @@ Laboratory work for the Machine Learning Systems course. The labs can be opened 
 
 Reports: [Lab 01](lab01/report.md), [Lab 02](lab02/report.md), [Lab 03](lab03/report.md).
 
+## Lab 04: data pipeline and quality
+
+[data_pipeline.ipynb](lab04/data_pipeline.ipynb) contains Adult ingestion, schema and quality checks, train-only preprocessing, derived features, and a Logistic Regression comparison. All code cells have saved outputs. The problem definition and validation report are included in the notebook; dataset documentation is in [data_card.md](lab04/data_card.md).
+
+Open the notebook with the course Python environment and run all cells from the repository root or `lab04/`. PyYAML is also required (the recorded run uses version 6.0.3). A one-command execution option is included in the notebook.
+
+The first run downloads Adult version 2 from OpenML into the ignored `data/openml/` directory; later runs use the cache. Results, the fitted preprocessor, configuration and processed-data SHA256 are saved in `lab04/results/`. The 50-row manual review worksheet is exported as `lab04/results/review_50.csv` with the saved review statuses and notes; notebook reruns preserve these entries for unchanged sampled records.
+
 ## Environment
 
 Use Python 3.11.8. Shared pinned dependencies are in `requirements.txt`. From the repository root in PowerShell, the existing environment can be activated with:
