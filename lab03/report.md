@@ -6,7 +6,7 @@ Compare the prescribed MLP, CNN and patch-attention classifiers on Fashion-MNIST
 
 ## 2. Method
 
-All experiment code and saved outputs are in [architectures.ipynb](architectures.ipynb). The dataset is downloaded into the ignored repository-level `data/` directory. The official 60,000 training images are split deterministically into 55,000 training and 5,000 validation images; the official 10,000 test images remain separate. Inputs use ToTensor and normalization with mean 0.2860 and standard deviation 0.3530. Each model is trained for five epochs with Adam, learning rate 0.001 and batch size 128. Initialization, data splitting and loader generators use seed 42; Python, NumPy and CPU/CUDA Torch seeds are set.
+Experiment orchestration and saved outputs are in [architectures.ipynb](architectures.ipynb); model definitions are in [src/models.py](src/models.py). The dataset is downloaded into the ignored repository-level `data/` directory. The official 60,000 training images are split deterministically into 55,000 training and 5,000 validation images; the official 10,000 test images remain separate. Inputs use ToTensor and normalization with mean 0.2860 and standard deviation 0.3530. Each model is trained for five epochs with Adam, learning rate 0.001 and batch size 128. Initialization, data splitting and loader generators use seed 42; Python, NumPy and CPU/CUDA Torch seeds are set.
 
 The final epoch-five model is evaluated on the test set; validation metrics are logged without choosing checkpoints from test performance. The models share training examples, epoch count, optimizer settings and batch order. The comparison does not control for equal parameter count or equal compute.
 
