@@ -1,0 +1,11 @@
+graph(%self.1 : __torch__.torch.nn.modules.container.___torch_mangle_7.Sequential,
+      %input.1 : Tensor):
+  %self.2.weight : Double(1, 8, strides=[8, 1], requires_grad=0, device=cpu) = prim::Constant[value= 1.9905 -2.4954  0.7782  0.2786  0.6575 -1.8872  0.7264  1.3432 [ CPUDoubleType{1,8} ]]()
+  %self.2.bias : Double(1, strides=[1], requires_grad=0, device=cpu) = prim::Constant[value={-0.556073}]()
+  %self.0.weight : Double(8, 2, strides=[2, 1], requires_grad=0, device=cpu) = prim::Constant[value=<Tensor>]()
+  %self.0.bias : Double(8, strides=[1], requires_grad=0, device=cpu) = prim::Constant[value=-0.1294  0.1974 -0.1164 -0.0147 -0.0328  0.1288 -0.0755 -0.0672 [ CPUDoubleType{8} ]]()
+  %input.3 : Tensor = aten::linear(%input.1, %self.0.weight, %self.0.bias), scope: __module.0 # C:\Users\maria\Desktop\university\ML_73952\lab01\.venv\Lib\site-packages\torch\nn\modules\linear.py:116:0
+  %input.5 : Tensor = aten::sigmoid(%input.3), scope: __module.1 # C:\Users\maria\Desktop\university\ML_73952\lab01\.venv\Lib\site-packages\torch\nn\modules\activation.py:292:0
+  %input : Tensor = aten::linear(%input.5, %self.2.weight, %self.2.bias), scope: __module.2 # C:\Users\maria\Desktop\university\ML_73952\lab01\.venv\Lib\site-packages\torch\nn\modules\linear.py:116:0
+  %9 : Tensor = aten::sigmoid(%input), scope: __module.3 # C:\Users\maria\Desktop\university\ML_73952\lab01\.venv\Lib\site-packages\torch\nn\modules\activation.py:292:0
+  return (%9)

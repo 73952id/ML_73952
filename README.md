@@ -10,6 +10,8 @@ Laboratory work for the Machine Learning Systems course. The labs can be opened 
 
 - [Lab 03: architectures and their costs](lab03/architectures.ipynb): PyTorch MLP, CNN and patch attention on Fashion-MNIST, parameter/FLOP comparison, five-epoch training and latency benchmarks.
 
+- [Lab 05: frameworks and automatic differentiation](lab05/autodiff.ipynb): scalar autograd, topological backpropagation, gradient validation, make_moons training, TorchScript tracing and tensor layout timings. See its [README](lab05/README.md) for execution and artifacts.
+
 Reports: [Lab 01](lab01/report.md), [Lab 02](lab02/report.md), [Lab 03](lab03/report.md).
 
 ## Lab 04: data pipeline and quality

@@ -1,0 +1,3 @@
+framework,train_seconds,last_training_loss,test_accuracy
+scalar,30.59098029998131,0.2858022288914702,0.85
+pytorch,0.3325565999839455,0.2858022288914701,0.85
