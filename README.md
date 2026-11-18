@@ -12,6 +12,8 @@ Laboratory work for the Machine Learning Systems course. The labs can be opened 
 
 - [Lab 05: frameworks and automatic differentiation](lab05/autodiff.ipynb): scalar autograd, topological backpropagation, gradient validation, make_moons training, TorchScript tracing and tensor layout timings. See its [README](lab05/README.md) for execution and artifacts.
 
+- [Lab 07: compression, pruning and distillation](lab07/compression.ipynb): oversized Fashion-MNIST CNN, global/layer-wise magnitude pruning, physical filter removal, dense/CSR storage and plain versus distilled students. See the [report](lab07/report.md) and [execution instructions](lab07/README.md).
+
 Reports: [Lab 01](lab01/report.md), [Lab 02](lab02/report.md), [Lab 03](lab03/report.md).
 
 ## Lab 04: data pipeline and quality

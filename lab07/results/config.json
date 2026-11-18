@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "batch_size": 512,
+  "teacher_epochs": 5,
+  "student_epochs": 5,
+  "finetune_epochs": 3,
+  "learning_rate": 0.001,
+  "finetune_learning_rate": 0.0001,
+  "sparsities": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95
+  ],
+  "filter_fractions": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "temperature": 4.0,
+  "alpha": 0.5,
+  "threads": 2,
+  "dtype": "float32",
+  "device": "cpu",
+  "train_rows": 55000,
+  "validation_rows": 5000,
+  "test_rows": 10000,
+  "split": "seeded permutation of official train; official test unchanged",
+  "preprocessing": "ToTensor-equivalent /255 then normalize mean .2860 std .3530",
+  "pruning_weights": "conv/linear weights; biases excluded",
+  "latency_rounds": 3,
+  "runtime_signature": {
+    "python": "3.11.8",
+    "torch": "2.3.1+cpu",
+    "cpu": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+  },
+  "energy": "No hardware power meter: report process CPU time as an energy-related proxy, not Joules",
+  "source_sha256": "cd00699624b259f25732f6130d67c26e2f6ced78f36c6a0cac305aa4634a55f4"
+}

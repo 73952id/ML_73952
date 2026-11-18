@@ -1,0 +1,8 @@
+{
+  "python": "3.11.8",
+  "torch": "2.3.1+cpu",
+  "numpy": "1.26.4",
+  "cpu": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "device": "cpu",
+  "threads": 2
+}
