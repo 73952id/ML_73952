@@ -1,0 +1,51 @@
+{
+  "scope": "FMA-small pilot: 50 train, 10 validation, 10 test per genre",
+  "seed": 42,
+  "split_sizes": {
+    "training": 400,
+    "validation": 80,
+    "test": 80
+  },
+  "accuracy": 0.425,
+  "macro_f1": 0.3842780164490633,
+  "threshold": 1.01,
+  "validation_selective": {
+    "accepted": 0,
+    "total": 80,
+    "coverage": 0.0,
+    "accuracy_among_accepted": null,
+    "target_met": false
+  },
+  "test_selective": {
+    "accepted": 0,
+    "total": 80,
+    "coverage": 0.0,
+    "accuracy_among_accepted": null,
+    "target_met": false
+  },
+  "model_bytes": 129082,
+  "model_size_limit_met": true,
+  "forward_p50_ms": 1.8969499997183448,
+  "forward_p95_ms": 2.600924999478593,
+  "latency_limit_met": true,
+  "latency_protocol": {
+    "device": "CPU",
+    "batch_size": 1,
+    "threads": 2,
+    "warmup": 20,
+    "repeats": 200,
+    "input": [
+      1,
+      1,
+      64,
+      216
+    ],
+    "includes_preprocessing": false
+  },
+  "training_seconds": 42.834972700000435,
+  "python": "3.11.8",
+  "torch": "2.3.1+cpu",
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "end_to_end_p95_ms": 23.065505000795376
+}

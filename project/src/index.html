@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Music Organizer</title>
+<style>
+body{font:16px system-ui,sans-serif;max-width:1050px;margin:45px auto;padding:0 24px;background:#f5f6fa;color:#18202c}h1{margin-bottom:8px}p{line-height:1.6;color:#485368}.card{background:white;border:1px solid #dde2eb;border-radius:12px;padding:24px;margin:22px 0}button,input::file-selector-button{border:0;border-radius:6px;background:#304cb3;color:white;padding:10px 16px;cursor:pointer}button:disabled{opacity:.5;cursor:wait}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:13px 9px;border-bottom:1px solid #e4e8ef}select{padding:6px;border:1px solid #ccd3df;border-radius:5px}.review{color:#985c00}.auto{color:#176348}#message{white-space:pre-wrap}small{color:#485368}.scroll{overflow-x:auto}
+</style>
+<h1>Local Music Organizer</h1>
+<p>Choose music files. The model listens to five seconds from the middle and suggests a genre.</p>
+<div class="card"><input id="files" type="file" accept=".mp3,.wav,.flac,.ogg" multiple>
+<button id="analyze">Suggest genres</button><p id="message">Audio stays on this computer. Original files are unchanged.</p>
+<small id="scope"></small></div>
+<div class="card"><div class="scroll"><table><thead><tr><th>File</th><th>Suggested genre</th><th>Confidence</th><th>Decision</th><th>Final tag</th><th>Time</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p><button id="export" disabled>Save tags as CSV</button></p>
+<small>For uncertain predictions, choose the final tag yourself. Confidence is a model score, not a guarantee.</small></div>
+<script>
+let config, results=[];
+const files=document.querySelector('#files'), message=document.querySelector('#message'), analyze=document.querySelector('#analyze');
+const ready=fetch('/config').then(r=>r.json()).then(c=>{config=c;document.querySelector('#scope').textContent='Pilot model · 8 genres · 560 FMA-small tracks · automatic-tag threshold: '+(c.threshold>1?'disabled (validation target not reached)':(100*c.threshold).toFixed(1)+'%');}).catch(()=>{message.textContent='Cannot load the model configuration.';analyze.disabled=true;});
+function render(){
+ const body=document.querySelector('#rows');body.replaceChildren();
+ results.forEach((r,i)=>{
+  const row=document.createElement('tr');
+  for(const text of [r.filename,r.suggested_genre,(100*r.confidence).toFixed(1)+'%',r.status==='auto_tag'?'Automatic tag':'Needs your review']){
+   const cell=document.createElement('td');cell.textContent=text;row.append(cell);
+  }
+  row.children[3].className=r.status==='auto_tag'?'auto':'review';
+  const cell=document.createElement('td'), select=document.createElement('select');
+  const empty=document.createElement('option');empty.value='';empty.textContent='Choose a tag';select.append(empty);
+  config.genres.forEach(g=>{const option=document.createElement('option');option.value=g;option.textContent=g;select.append(option);});
+  select.value=r.final_tag;select.onchange=()=>{r.final_tag=select.value;r.review_status=select.value?'human_reviewed':'pending';};cell.append(select);row.append(cell);
+  const time=document.createElement('td');time.textContent=r.total_ms.toFixed(1)+' ms';row.append(time);body.append(row);
+ });
+ document.querySelector('#export').disabled=results.length===0;
+}
+analyze.onclick=async()=>{
+ await ready;if(!files.files.length){message.textContent='Choose at least one music file.';return;}
+ analyze.disabled=true;results=[];render();let errors=[];
+ try{
+  for(const file of files.files){
+   message.textContent='Processing '+file.name+'…';
+   try{
+    const response=await fetch('/predict?filename='+encodeURIComponent(file.name),{method:'POST',headers:{'Content-Type':'application/octet-stream'},body:file});
+    const result=await response.json();if(!response.ok)throw Error(result.error);
+    result.final_tag=result.status==='auto_tag'?result.suggested_genre:'';
+    result.review_status=result.status==='auto_tag'?'automatic':'pending';results.push(result);render();
+   }catch(error){errors.push(file.name+': '+error.message);}
+  }
+  message.textContent='Processed '+results.length+' file(s).'+(errors.length?'\n'+errors.join('\n'):' Review uncertain suggestions, then save the CSV.');
+ }finally{analyze.disabled=false;}
+};
+document.querySelector('#export').onclick=()=>{
+ const fields=['filename','suggested_genre','confidence','status','final_tag','review_status','total_ms'];
+ const quote=value=>'"'+String(value??'').replaceAll('"','""')+'"';
+ const csv=[fields.map(quote).join(','),...results.map(r=>fields.map(f=>quote(r[f])).join(','))].join('\r\n');
+ const url=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));
+ const link=document.createElement('a');link.href=url;link.download='music_tags.csv';link.click();URL.revokeObjectURL(url);
+};
+</script>
+</html>

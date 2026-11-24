@@ -1,0 +1,25 @@
+{
+  "source": "https://os.unil.cloud.switch.ch/fma/",
+  "seed": 42,
+  "total_tracks": 560,
+  "track_ids_unique": true,
+  "genres": [
+    "Electronic",
+    "Experimental",
+    "Folk",
+    "Hip-Hop",
+    "Instrumental",
+    "International",
+    "Pop",
+    "Rock"
+  ],
+  "split_counts": {
+    "training": 400,
+    "test": 80,
+    "validation": 80
+  },
+  "artist_overlap_between_splits": 0,
+  "original_split_preserved": true,
+  "downloaded_files": 560,
+  "audio_integrity": "ZIP member size and CRC checked during download"
+}

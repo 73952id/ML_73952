@@ -1,0 +1,19 @@
+{
+  "genres": [
+    "Electronic",
+    "Experimental",
+    "Folk",
+    "Hip-Hop",
+    "Instrumental",
+    "International",
+    "Pop",
+    "Rock"
+  ],
+  "threshold": 1.01,
+  "seed": 42,
+  "training_scope": "FMA-small pilot: 50 train, 10 validation, 10 test per genre",
+  "segment_seconds": 5,
+  "segment_position": "center",
+  "threads": 2,
+  "best_epoch": 20
+}
